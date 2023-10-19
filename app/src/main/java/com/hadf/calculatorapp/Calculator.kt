@@ -32,7 +32,7 @@ fun Calculator(
             modifier = Modifier
                 .fillMaxWidth()
                 .align(Alignment.BottomCenter),
-            verticalArrangement = Arrangement.SpaceEvenly
+            verticalArrangement = Arrangement.spacedBy(buttonSpacing)
         ) {
             Text(
                 text = state.number1 + (state.operation?.symbol ?: "") + state.number2,
@@ -47,7 +47,7 @@ fun Calculator(
             )
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
+                horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
                 CalculatorButton(
                     symbol = "AC",
@@ -84,7 +84,7 @@ fun Calculator(
             // 2nd Row
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
+                horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
                 CalculatorButton(
                     symbol = "7",
@@ -131,7 +131,7 @@ fun Calculator(
             // 3rd Row
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
+                horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
                 CalculatorButton(
                     symbol = "4",
@@ -178,7 +178,7 @@ fun Calculator(
             // 4th Row
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
+                horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
                 CalculatorButton(
                     symbol = "1",
@@ -225,7 +225,7 @@ fun Calculator(
             // 5th Row
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
+                horizontalArrangement = Arrangement.spacedBy(buttonSpacing)
             ){
                 CalculatorButton(
                     symbol = "0",
